@@ -1,0 +1,37 @@
+.results {
+    background-color: rgba(1,12,63, 0.7);
+    height: 100%;
+    width: 50%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 5px solid black;
+}
+
+.resultsBox {
+    padding: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.song {
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alt {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.alt:hover {
+    cursor: pointer; 
+    color: gray;
+    transition: color 0.5s
+}

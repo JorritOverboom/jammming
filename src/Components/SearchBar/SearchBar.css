@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #010c3f;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    margin-top: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: purple;
+    transition: .25s;
+}

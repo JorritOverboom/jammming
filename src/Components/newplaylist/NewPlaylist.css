@@ -1,0 +1,27 @@
+.newPlaylist {
+    background-color: rgba(1,12,63, 0.7);
+    height: 100%;
+    width: 42%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 5px solid black;
+}
+
+.newPlaylistBox {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.save {
+    background-color: #6c41ec;
+}
+
+.save:hover {
+    background-color: rgba(108, 65, 236, 0.7)
+}

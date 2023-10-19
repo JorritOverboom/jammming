@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import SearchBar from './Components/SearchBar/SearchBar';
+import Results from './Components/Results/Results';
+import NewPlaylist from './Components/NewPlaylist/NewPlaylist'
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello World</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="cover">
+      <h1>Ja<span className="highlight">mmm</span>ing</h1>
+      <div className="app">
+        <SearchBar />
+        <div className="playlist">
+          <Results />
+          <NewPlaylist />
+        </div>
+      </div>
     </div>
+      
   );
 }
 

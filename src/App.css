@@ -1,0 +1,41 @@
+body,
+html,
+#root,
+.cover {
+  height: 100%;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  background-color: #010c3f;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 15px;
+}
+
+h1 .highlight {
+  color: #6c41ec;
+}
+
+.app {
+  height: 100%;
+  background-image: url("./Images/background_photo_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.playlist {
+  width: 65%;
+  min-height: 700px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
