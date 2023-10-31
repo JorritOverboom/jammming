@@ -8,7 +8,8 @@
 }
 
 .newPlaylistBox {
-    padding: 10px;
+    padding: 15px;
+    min-height: 500px;
 }
 
 h2 {
@@ -16,6 +17,17 @@ h2 {
     margin: 0;
     margin-top: 50px;
     border-bottom: 1px solid gray;
+}
+
+.del {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.del:hover {
+    cursor: pointer; 
+    color: gray;
+    transition: color 0.5s
 }
 
 .save {

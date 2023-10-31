@@ -9,6 +9,7 @@
 
 .resultsBox {
     padding: 15px;
+    min-height: 500px;
 }
 
 h2 {
@@ -25,12 +26,12 @@ h2 {
     justify-content: space-between;
 }
 
-.alt {
+.add {
     font-size: 1.5rem;
     padding: 10px;
 }
 
-.alt:hover {
+.add:hover {
     cursor: pointer; 
     color: gray;
     transition: color 0.5s

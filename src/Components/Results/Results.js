@@ -1,11 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Results.css'
 
-function Results() {
-    
-    function showResult() {
+export default function Results({onAddClick}) {
 
-        const songs = [
+    const resultList = [
             {
                 artist: 'Elton John',
                 songTitle: 'Tiny Dancer',
@@ -13,7 +11,7 @@ function Results() {
             },
             {
                 artist: 'Run The Jewels',
-                songTitle: 'holy calamfuck',
+                songTitle: 'holy calamafuck',
                 album: 'RTJ4'
             },
             {
@@ -37,38 +35,35 @@ function Results() {
                 album: 'Buiten Westen'
             }
         ]
-
-        const list = songs.map((a) => 
-            (
-            <div>
-                <h3>{a.artist}</h3>
-                <p>{a.songTitle} | {a.album}</p>
-            </div>
-            )
-        );
-
-        const song = list.map((a) =>
+        
+    function handleAddSongClick(index) {
+            onAddClick([resultList[index]]);
+    }
+    
+    function showResults() {
+        const song = resultList.map((song, index) =>
             (
             <div className="song">
-                {a}
                 <div>
-                    <div className="alt">+</div>
+                    <h3>{song.artist}</h3>
+                    <p>{song.songTitle} | {song.album}</p>
+                </div>
+                <div>
+                    <div className="add" onClick={() => handleAddSongClick(index)}>+</div>
                 </div>
             </div>
             )
         );
 
-    return song;
+        return song;
     }
 
     return (
         <div className="results">
             <div className="resultsBox">
                 <h2>Results</h2>
-                {showResult()}
+                {showResults()}
             </div>
         </div>
     )
 }
-
-export default Results;

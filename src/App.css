@@ -21,7 +21,6 @@ h1 .highlight {
 }
 
 .app {
-  height: 100%;
   background-image: url("./Images/background_photo_desktop.jpg");
   background-position: center;
   background-size: cover;
